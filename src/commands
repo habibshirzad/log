@@ -1,0 +1,25 @@
+1-
+filebeat:
+cd filebeat
+./filebeat -e -c filebeat.yml
+
+
+2-
+logstash:
+cd logstash
+./bin/logstash -f config/first_pipeline.conf
+pipelines.yml logstash.yml first_pipeline.conf all in the config folder.
+
+3-
+elasticsearch:
+cd elasticsearch
+./bin/elasticsearch
+9200
+
+
+4- 
+kibana:
+cd kibana
+bin/kibana  
+5601
+
